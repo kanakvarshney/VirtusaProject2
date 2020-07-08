@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="section-headline"><span>Home</span></h2>
+        </div>
+        <div class="col-sm-4">
+            <img src="../../../assets/image/logo.jpg" class="img-fluid right" alt="Responsive image"
+             style="width: 200px; z-index: 1;"/>
+        </div>
+        <img src="../../../assets/image/wood.png" class="img-fluid right" alt="Responsive image" 
+        style="position: absolute; margin-top: 90px;  z-index: -2;"/>
+      </div>
+        
+        <hr style="position: absolute; width: 85%; height: 5px; background-color: black; z-index: -1; 
+        margin-top: -120px;"/>
+
+<div class="row" style="margin-top: 150px;">
+    <div class="col-md-4" *ngFor="let product of productList">
+        <app-clothes-list [productItem]="product"></app-clothes-list>
+        </div>
+    </div>
+</div>

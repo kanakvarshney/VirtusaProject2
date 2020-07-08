@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark  n"> </nav>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    
+    <h2 class="my-0 mr-md-auto font-weight-normal text-white">
+            Vyntra Mart   
+            </h2>
+            
+                <a mat-button class="nav-item nav-link  text-white" routerLink="/clothes">Clothes</a>
+            <form class="form-inline my-2 my-lg-0 " (ngSubmit)="onSubmit()">
+                 <div class="form-group">
+                <input class="form-control mr-sm-2" name="onSubmit"  type="text" placeholder="Search" aria-label="Search">
+                </div>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            
+    <div class="navbar-nav">
+      <a  class="nav-item nav-link text-white" routerLink="/myAccount" *ngIf="loggedIn==false"  >
+        <button mat-button>My Account</button></a>
+        <a mat-button class="nav-item nav-link text-white" *ngIf="loggedIn==false" routerLink="/shoppingCart">
+          <button mat-button>Shopping Cart</button></a>
+        <a mat-button class="nav-item nav-link text-white" *ngIf="loggedIn == false" routerLink="/myProfile">
+          <button mat-button>My Profile</button></a>
+          <a mat-button class="nav-item nav-link text-white" *ngIf="!loggedIn == false" routerLink="/logOut">Log Out</a>
+  </div>
+  </nav>

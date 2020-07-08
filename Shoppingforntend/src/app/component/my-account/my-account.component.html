@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="section-headline"><span>Home</span></h2>
+        </div>
+        <div class="col-sm-4">
+            <img src="../../../assets/image/logo.jpg" class="img-fluid right" alt="Responsive image"
+             style="width: 200px; z-index: 1;"/>
+        </div>
+        <img src="../../../assets/image/wood.png" class="img-fluid right" alt="Responsive image" 
+        style="position: absolute; margin-top: 90px;  z-index: -2;"/>
+      </div>
+        
+        <hr style="position: absolute; width: 85%; height: 5px; background-color: black; z-index: -1; 
+        margin-top: -120px;"/>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-3"></div>
+            <div class="col-9">
+                <div class="card" style="border:none;">
+                    <div class="card-body" style="background-color: #ededed;
+                     margin-top: 20px; width: auto;">
+                     <mat-tab-group>
+                     <mat-tab label="Login">
+                        <div style="margin-top:20px;">
+                          
+
+                            <form>
+                                <div class="form-group">
+                                    <label for ="username">Username *</label>
+                                    <input type="text" class="form-control" id="username" name="username" >
+                                    <p style="color:#828282;">Enter your username</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for ="password">Password *</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                    >
+                                    <p style="color:#828282;">Enter your password</p>
+                                </div>
+                                <p class="divider-text">
+                                    <span class="bg-light">OR</span>
+                                </p>
+                                <div class="form-group">
+                                  <button type="submit" mat-raised-button color='primary'>OTP</button>
+                                </div> 
+                                <button mat-raised-button type="submit" color='primary'>Log In</button>
+                            </form>
+                           
+                        </div>
+                    </mat-tab>
+                    
+                    <mat-tab label="New Account">
+
+                        <div style="margin-top: 20px;">
+                            
+                            <form >
+                                <div class="form-group">
+                                    <label for="newUsername">Username *</label>
+                                    <input type="text" class="form-control" id="newUsername" name="username"
+                                    >
+                                    <p style="color:#828282;">Enter your username</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" 
+                                 >
+                                    <p style="color:#828282;">A valid e-mail address. All e-mails from the system 
+                                        will be sent to this address.</p>
+                                </div>
+                                <p class="divider-text">
+                                    <span class="bg-light">OR</span>
+                                </p>
+
+                                <p>
+                                    <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+                                </p>
+                                <button mat-raised-button type="submit" color='primary'>Create new account</button>
+                            </form>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Forget Password">
+                        <div style="margin-top: 20px;">
+                            
+                            <form >
+                                <div class="form-group">
+                                    <label for="recoverEmail">Your Email Address *</label>
+                                    <input type="email" class="form-control" id="recoverEmail" name="recoverEmail"
+                                      >
+                                    <p style="color:#828282;">Enter your registered email address.</p>
+                                </div>
+                                <button mat-raised-button type="submit" color='primary'>Submit</button>
+                            </form>
+                        </div>
+                
+
+                    </mat-tab>
+
+                </mat-tab-group>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
